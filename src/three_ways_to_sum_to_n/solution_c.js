@@ -5,4 +5,12 @@
 
 var sum_to_n = function(n) {
     // your code here
+
+    if (n < 0) {
+        return "negative";
+    }
+    
+    return n*(n+1)/2;
 };
+var sum = sum_to_n(10); //input here
+console.log(sum);

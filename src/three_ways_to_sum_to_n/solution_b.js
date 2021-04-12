@@ -5,4 +5,17 @@
 
 var sum_to_n = function(n) {
     // your code here
+
+    if (n < 0) {
+        return "negative";
+    }
+
+    while (n != 0) {
+        return n + sum_to_n(n-1);
+    }
+
+    return n;
 };
+
+var sum = sum_to_n(10); //input here
+console.log(sum);
